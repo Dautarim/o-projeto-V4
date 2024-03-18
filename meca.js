@@ -83,24 +83,24 @@ async function pega() {
 
 (async () => {
     const res = await pega();
-    await res.map((e)=>
-    {
-        let nomeUP = e.nome
-        container.innerHTML += 
-        `<div class="card">
-        <a href="${e.linkSite}" target="_blank">
-        <div class="foto">
-            <img src="${e.linkImg}" alt="">
-        </div>
-        <div class="desc">
-            <p>
-                ${nomeUP.toUpperCase()}
-            </p>
-            <span>
-                35 Anos
-            </span>
-            </a> </div>  `
-    })
+    // await res.map((e)=>
+    // {
+    //     let nomeUP = e.nome
+    //     container.innerHTML += 
+    //     `<div class="card">
+    //     <a href="${e.linkSite}" target="_blank">
+    //     <div class="foto">
+    //         <img src="${e.linkImg}" alt="">
+    //     </div>
+    //     <div class="desc">
+    //         <p>
+    //             ${nomeUP.toUpperCase()}
+    //         </p>
+    //         <span>
+    //             35 Anos
+    //         </span>
+    //         </a> </div>  `
+    // })
     // console.log(res)
     
 })();
@@ -116,30 +116,30 @@ async function hilight()
 
     let nomeUp = listHilight[alea].nome
 
-    land.innerHTML = `
-            <div class="esquerda">
-                <h1>
-                    <sapn>${nomeUp.toUpperCase()}</sapn>
-                </h1>
+    // land.innerHTML = `
+    //         <div class="esquerda">
+    //             <h1>
+    //                 <sapn>${nomeUp.toUpperCase()}</sapn>
+    //             </h1>
 
-                <p>
-                    ${listHilight[alea].sobre}
-                </p>
+    //             <p>
+    //                 ${listHilight[alea].sobre}
+    //             </p>
 
-                <div class="acoes">
-                    <a href="#"> Mais </a>
-                    <a href="#"> Assistir </a>
-                </div>
+    //             <div class="acoes">
+    //                 <a href="#"> Mais </a>
+    //                 <a href="#"> Assistir </a>
+    //             </div>
 
-            </div>
-            <div class="direita">
-                <div class="imgz">
-                    <img src="images/${listHilight[alea].image_cut}" alt="apr">
-                    <div class="blure"></div>
-                </div>   
+    //         </div>
+    //         <div class="direita">
+    //             <div class="imgz">
+    //                 <img src="images/${listHilight[alea].image_cut}" alt="apr">
+    //                 <div class="blure"></div>
+    //             </div>   
                 
-            </div>
-        `
+    //         </div>
+    //     `
 }
 
 function search(set)
