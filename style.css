@@ -1,0 +1,417 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    /* border: 1px solid #fff; */
+}
+
+:root
+{
+    --princip: #e700fc;
+    --branco: #fff;
+    --preto: #000;
+    --back: #03030e;
+    --back2:#030114;
+
+}
+
+body
+{
+    background: var(--back);
+    color: var(--branco);
+}
+
+header
+{
+    width: 100%;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    /* box-shadow: 0 24px 74px #3c00bd29; */
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+/*Botão de subida auto*/
+
+.top
+{
+    position: fixed;
+    bottom: 40px;
+    right: 36px;
+
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    box-shadow: 0 24px 44px  var(--preto);
+    z-index: 999;
+    backdrop-filter: blur(10px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s ease;
+
+
+}
+
+.top i
+{
+    font-size: 2em;
+}
+
+
+.top.pc.mec
+{
+    bottom: 100px;
+    width: auto;
+    border-radius: 24px;
+    padding: 6px 20px ;
+    gap: 16px;
+}
+
+.top.pc.mec input
+{
+    background: transparent;
+    border: none;
+    width: 250px;
+}
+
+.top.pc
+{
+    bottom: 100px;
+    width: auto;
+    border-radius: 24px;
+    padding: 6px 20px ;
+    gap: 0px;
+}
+
+.top.pc input
+{
+    background: transparent;
+    border: none;
+    width: 0px;
+    transition: .5s ease;
+    color: var(--branco);
+    
+}
+
+.top.pc input:focus
+{
+    border: none;
+    outline: none;
+}
+
+
+.top.pc i
+{
+    font-size: 1.2em;
+}
+
+
+header #e1 {
+    width: 100px;
+    height: 100px;
+}
+header #e1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+header #e2 ul
+{
+    display: flex;
+    gap: 32px;
+}
+
+header #e2 ul li
+{
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+}
+
+header #e2 ul li a
+{
+    text-decoration: none;
+    color: var(--branco);
+    font-size: 1.3em;
+    font-weight: 600;
+    transition: .3s ease-in-out;
+    padding: 4px 16px;
+    border-radius: 8px;
+   
+    
+}
+
+header #e2 ul li a:hover
+{
+    color: var(--princip);  
+    background: var(--back2);
+    box-shadow: 0 24px 74px var(--preto);
+
+}
+
+
+header #e3 
+{
+    width: 350px;
+    position: relative;
+}
+
+header #e3 input
+{
+    width: 100%;
+    height: 40px;
+    border-radius: 25px;
+    background: transparent ;
+    border: 2px solid transparent ;
+    border-bottom: 1px solid var(--princip);
+    padding: 12px;
+    transition: .19s ease-in-out;
+    color: var(--branco);
+
+}
+
+header #e3 input::placeholder,
+.top.pc input::placeholder
+{
+    color: #d3d3d3;
+}
+
+header #e3 input:focus
+{
+    border: 2px solid var(--princip);
+    outline: var(--princip); 
+    background: var(--back);
+}
+
+header #e3 i
+{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--princip);
+    font-size: 20px;
+    font-weight: 700;
+
+}
+
+/*--------------------------------------------------------------------------------*/
+
+main .landing
+{
+    display: flex;
+    margin:100px 40px;
+    gap: 40px;
+
+}
+
+main .landing .esquerda
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding-left: 60px;
+}
+
+main .landing.direita,main .landing .esquerda
+{
+    width: 50%;
+}
+
+main .landing h1
+{
+    font-size: 3.9em;
+    margin-bottom: 20px;
+    color:var(--princip);
+}
+
+main .landing h2
+{
+    width: 80%;
+    margin-bottom: 24px;
+}
+
+main .landing p 
+{  
+    overflow: hidden;
+    position: relative;
+    line-height: 1.2em;
+    max-height: 6em; /* aqui vc controla a altura da caixa de texto */
+    text-align: justify;
+}
+
+main .landing p::before
+{
+    content: '...';
+    position: absolute;
+    right: 0px;
+    bottom: 0;
+    background-color: var(--back);
+    padding: 0 0px 0 0.25em;
+}
+
+main .landing .esquerda .acoes
+{
+    display: flex;
+    gap: 24px;
+}
+
+main .landing .esquerda .acoes a
+{
+    font-size: 1.15em;
+    text-decoration: none;
+    color: var(--princip);
+    padding: 8px 20px;
+    transition: .3s ease;
+    border-radius: 8px;
+    border: 1px solid var(--princip);
+}
+
+main .landing .esquerda .acoes a:nth-child(1)
+{
+    background: var(--princip);
+    color: var(--branco);
+}
+
+main .landing .esquerda .acoes a:hover
+{
+    background: var(--princip);
+    color: var(--branco);
+}
+
+main .landing .direita
+{
+    position: relative;
+}
+
+main .landing .direita .imgz
+{
+    position: absolute;
+    top: -120px;
+    left: 150px;
+
+    width: 370px;
+    height: auto;
+}
+
+main .landing .direita .imgz .blure
+{
+    background: linear-gradient(to bottom, transparent , var(--back) 65%);
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width:100%;
+    height: 120px;
+}
+
+
+main .landing .imgz img
+{
+    width: 100%;
+    height: 100%;
+}
+
+/*sec2=-----------------------------------------------------------------------*/
+
+main .passarela
+{ 
+    width: 100%;
+    padding-block: 200px;
+    padding-inline: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+
+}
+
+main .passarela a
+{
+    color: var(--back);
+    text-decoration: none;
+}
+
+main .passarela .card
+{
+
+    position: relative;
+    width: 220px;
+    height: 340px;
+    box-shadow: 0 40px 48px  #0000006e;
+    border-radius: 16px;
+    transition: .3s ease;
+    overflow: hidden;
+
+}
+
+main .passarela .card.non
+{
+    display: none;
+}
+
+main .passarela .card .foto
+{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+main .passarela .card .foto img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main .passarela .card .desc
+{
+    position: absolute;
+    bottom: -34px;
+    transition: .3s ease;
+    left: 0px;
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.144) 15%);
+    backdrop-filter: blur(12px);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    color: var(--branco);
+
+}
+
+main .passarela .card:hover .desc
+{
+    bottom: 0px;
+    
+}
+
+main .passarela .card .desc p
+{
+    font-size: 1.3em;
+    font-weight: 600;
+    
+}
+
+main .passarela .card .desc p
+{
+    font-weight: 500;
+
+}
+
+
+
