@@ -127,8 +127,8 @@ async function hilight()
                 </p>
 
                 <div class="acoes">
-                    <a href="#"> Mais </a>
-                    <a href="#"> Assistir </a>
+                    <a href="star.html"> Mais </a>
+                    <a href="${listHilight[alea].linkSite}"> Assistir </a>
                 </div>
 
             </div>

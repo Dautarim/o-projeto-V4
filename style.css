@@ -25,6 +25,17 @@ body
     background: var(--back);
     color: var(--branco);
 }
+body::-webkit-scrollbar
+{
+    width: 8px;
+    background: transparent;
+}
+
+body::-webkit-scrollbar-thumb
+{
+    background: var(--princip);
+    border-radius: 8px;
+}
 
 header
 {
@@ -60,6 +71,23 @@ header
     transition: .3s ease;
 
 
+}
+
+.top.hm
+{
+    bottom: 160px;
+    right: 36px;
+}
+.top.hm a
+{
+    color: var(--branco);
+    text-decoration: none;
+    
+}
+
+.top.hm a i
+{
+    font-size: 1.5em;
 }
 
 .top i
