@@ -126,6 +126,7 @@
     display: flex;
     border-bottom: 4px solid var(--princip);
     padding: 0px 12px;
+    cursor: pointer;
 
 }
 
@@ -139,7 +140,8 @@
 }
 
 
-.nav .p_video.atv
+.nav .p_video.atv,
+.nav .p_foto.atv
 {
     background: var(--princip);
     color: var(--back2);

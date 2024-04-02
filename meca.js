@@ -85,18 +85,17 @@ async function pega() {
 
 (async () => {
     const res = await pega();
-    await res.map((e)=>
+    await res.map((e, index)=>
     {
-        let nomeUP = e.nome
         container.innerHTML += 
         `<div class="card">
-            <a href="${e.linkSite}" target="_blank" class="lik">
+            <a href="star.html?id=${index}" class="lik">
                 <div class="foto">
                     <img src="${e.linkImg}" alt="">
                 </div>
                 <div class="desc">
                     <p class="nm">
-                        ${nomeUP.toUpperCase()}
+                        ${e.nome.toUpperCase()}
                     </p>
                     <span>
                         35 Anos
@@ -115,11 +114,20 @@ async function pega() {
 
 async function hilight()
 {
-    
+    const indiceList = []
     const nList = await pega()
-    const listHilight = await nList.filter(e => e.image_cut)
-    const alea = await Math.floor(Math.random() * listHilight.length)
-    // console.log(alea)
+    const listHilight = await nList.filter((e, index) => 
+    {
+        if (e.image_cut)
+        {
+            indiceList.push(index)
+            return true
+        }
+        
+    })
+    
+    const alea = Math.floor(Math.random() * listHilight.length)
+    
     // console.log(listHilight)
 
     let nomeUp = listHilight[alea].nome
@@ -135,7 +143,7 @@ async function hilight()
                 </p>
 
                 <div class="acoes">
-                    <a href="star.html"> Mais </a>
+                    <a href="star.html?id=${indiceList[alea]}"> Mais </a>
                     <a href="${listHilight[alea].linkSite}"> Assistir </a>
                 </div>
 
