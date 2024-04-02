@@ -98,6 +98,7 @@ header
 
 .top.pc.mec
 {
+    background: var(--back);
     bottom: 100px;
     width: auto;
     border-radius: 24px;
@@ -107,13 +108,14 @@ header
 
 .top.pc.mec input
 {
-    background: transparent;
+    
     border: none;
     width: 250px;
 }
 
 .top.pc
 {
+
     bottom: 100px;
     width: auto;
     border-radius: 24px;

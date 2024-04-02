@@ -43,8 +43,9 @@ topzao.addEventListener("click",()=>{
 /*==========================Add Stars on painel=======================================*/
 let container = document.querySelector(".passarela")
 let land = document.querySelector(".landing")
-let searcbt = document.querySelector("#botDePesquisa")
 let bdy = document.querySelector("body")
+let searcbt = document.querySelector("#botDePesquisa")
+let elements = []
 
 
 function ccc()
@@ -62,6 +63,7 @@ searcbt.addEventListener("click", (e)=>
 
         }
 })
+
 bdy.addEventListener("click", (e) => 
 {
 
@@ -88,22 +90,28 @@ async function pega() {
         let nomeUP = e.nome
         container.innerHTML += 
         `<div class="card">
-        <a href="${e.linkSite}" target="_blank">
-        <div class="foto">
-            <img src="${e.linkImg}" alt="">
-        </div>
-        <div class="desc">
-            <p>
-                ${nomeUP.toUpperCase()}
-            </p>
-            <span>
-                35 Anos
-            </span>
-            </a> </div>  `
+            <a href="${e.linkSite}" target="_blank" class="lik">
+                <div class="foto">
+                    <img src="${e.linkImg}" alt="">
+                </div>
+                <div class="desc">
+                    <p class="nm">
+                        ${nomeUP.toUpperCase()}
+                    </p>
+                    <span>
+                        35 Anos
+                    </span>
+                </div>
+            </a> 
+        </div>  `
     })
-    // console.log(res)
+    
+
+    elements = container.querySelectorAll(".card")
+    // console.log(elements[4])
     
 })();
+
 
 async function hilight()
 {
@@ -111,8 +119,8 @@ async function hilight()
     const nList = await pega()
     const listHilight = await nList.filter(e => e.image_cut)
     const alea = await Math.floor(Math.random() * listHilight.length)
-    console.log(alea)
-    console.log(listHilight)
+    // console.log(alea)
+    // console.log(listHilight)
 
     let nomeUp = listHilight[alea].nome
 
@@ -142,52 +150,49 @@ async function hilight()
         `
 }
 
-function search(set)
+//============PESQUISA=======================
+
+let tempo = null
+function search(pesq)
 {
+    clearTimeout(tempo)
 
-    let sevPadrao = document.getElementById("searchImpt")
+     
 
-    console.log(sevPadrao)
-    if(set != 1)
+    tempo = setTimeout(()=> { 
+        container.innerHTML = ""
+        elements.forEach((e)=> 
     {
-        sevPadrao = document.getElementById("searchImpt2")
-    }
+        let no = e.querySelector(".nm").innerText.toLowerCase()
 
-    let nList =  container.querySelectorAll(".card")
-    nList.forEach((e)=>
-    {
-        let pesquisa = sevPadrao.value
-        pesquisa = pesquisa.toLowerCase()
-        
-        
-        let nomedela = e.querySelector('p').innerText
-        nomedela = nomedela.toLowerCase()
-
-        if(!nomedela.includes(pesquisa))
+        if(no.includes(pesq.target.value))
         {
-            e.style.display = "none"
-            console.log(e)
+            container.innerHTML += 
+            `<div class="card">
+                <a href="${e.querySelector(".lik").getAttribute('href')}" target="_blank">
+                    <div class="foto">
+                        <img src="${e.querySelector(".foto img").getAttribute('src')}" alt="">
+                    </div>
+                    <div class="desc">
+                        <p class="nm">
+                            ${e.querySelector(".nm").innerText.toUpperCase()}
+                        </p>
+                        <span>
+                            35 Anos
+                        </span>
+                    </div>
+                </a> 
+            </div>  `
+            console.log(e.querySelector(".nm").innerText)
+            
         }
-        else
-        {
-            e.style.display = "blok"
-        }
-        
-    })
 
+    })},1000)
 
-} 
-
-function oi()
-{
-    console.log("oi")
 }
 
-// const imptSrc1 = document.querySelector("#searchImpt")
-// const imptSrc2 = document.querySelector("#searchImpt2")
-
-// imptSrc1.addEventListener("keyup", search(1))
-// imptSrc2.addEventListener("keyup", search(2))
+document.querySelector("#searchImpt2").addEventListener("keyup", search)
+document.querySelector("#searchImpt").addEventListener("keyup", search)
 
 setInterval(hilight,5000)
 
