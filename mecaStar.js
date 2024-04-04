@@ -76,10 +76,3 @@ let linkTwiter = document.querySelectorAll(".dir a")[2];
     }
 )})()
 
-//as que faltam
-/* 
- -Valeria Kay
- -juliana vega
- -richelle ryan
- -august taylor
-*/

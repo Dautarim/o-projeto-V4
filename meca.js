@@ -202,7 +202,12 @@ function search(pesq)
 document.querySelector("#searchImpt2").addEventListener("keyup", search)
 document.querySelector("#searchImpt").addEventListener("keyup", search)
 
-setInterval(hilight,5000)
+document.querySelector(".sandwich").addEventListener("click",()=>{
+    document.querySelector(".bandas ul").classList.toggle("nulla")
+    document.querySelector(".sandwich").classList.toggle("nulla")
+})
+
+setInterval(hilight,300000)
 
 
 

@@ -8,6 +8,7 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     /* border: 1px solid #fff; */
+    
 }
 
 :root
@@ -43,7 +44,7 @@ header
     padding: 20px;
     backdrop-filter: blur(10px);
     /* box-shadow: 0 24px 74px #3c00bd29; */
-
+    transition: .4s ease;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -156,10 +157,11 @@ header #e1 img {
     object-fit: contain;
 }
 
-header #e2 ul
+header #e2 ul.nulla
 {
     display: flex;
     gap: 32px;
+    z-index: 100;
 }
 
 header #e2 ul li
@@ -237,11 +239,63 @@ header #e3 i
 
 }
 
+.sandwich
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    /* background: #e700fc; */
+    border-radius: 12px;
+    box-shadow: 0 20px 24px  #0000006e;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    z-index: 12;
+    display: none;
+}
+.sandwich.nulla
+{
+    gap: 0px;
+    border: 2px solid var(--branco);
+    background: transparent;
+}
+
+.sandwich div
+{
+    height: 4px;
+    width: 30px;
+    background: var(--branco);
+    border-radius: 2px;
+    transition: .3s ease;
+}
+
+.sandwich.nulla div
+{
+    width: 20px;
+}
+.sandwich.nulla div:nth-child(1)
+{
+    transform:translateY(8px) rotate(45deg);   
+}
+.sandwich.nulla div:nth-child(2)
+{
+    display: none;
+}
+.sandwich.nulla div:nth-child(3)
+{
+    transform:translateY(-8px) rotate(-45deg);   
+}
+
 /*--------------------------------------------------------------------------------*/
 
 main .landing
 {
     display: flex;
+    flex-wrap: wrap;
     margin:100px 40px;
     gap: 40px;
 
@@ -443,5 +497,297 @@ main .passarela .card .desc p
 
 }
 
+/*=======Responsividade=========*/
+
+@media (max-width: 1000px) {
+
+        header #e3 
+            {
+                width: 200px;
+                
+            }
+
+            main .landing .direita .imgz 
+            {
+
+                left: 100px;
+                width: 320px;
+               
+            }
+            main .passarela 
+            {
+                justify-content: center;
+            }
+            
+    
+}
+
+@media (max-width: 710px) 
+{
+    main .landing {
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main .landing .esquerda,
+    main .landing .direita {
+        width: 100%;
+    }
+    main .landing .direita
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main .landing .direita .imgz 
+    {
+        position: static;
+    }
+    
 
 
+}
+@media (max-width: 750px) 
+{
+            
+
+            header
+            {
+                position: relative;
+            }
+
+            .sandwich
+            {
+                display: flex;
+            }
+        
+            header #e2 ul {
+                width: 250px;
+                background: var(--back);
+                position: absolute;
+                top: 40px;
+                right: 40px;
+                flex-direction: column;
+                z-index: 10;
+                box-shadow: 0 40px 48px  #0000006e;
+                border-radius: 0px 0px 12px 12px;
+            }
+
+            header #e2 ul
+            {
+                display: none;
+            }
+
+            main .landing {
+
+                gap: 20px;
+                flex-wrap: wrap;
+            }
+
+            main .landing h1 {
+                font-size: 2.9em;
+                margin-bottom: 0px;
+            }
+            main .landing p {
+                font-size: .9em;
+            }
+
+            main .landing .esquerda {
+                
+                padding-left: 30px;
+            }
+
+            main .landing .direita .imgz {
+                left: 50px;
+                top: -60px;
+                width: 280px;
+                z-index: 10;
+            }
+
+            .top.pc i {
+                font-size: 1em;
+            }
+
+            main .passarela {
+                
+                padding-block: 100px;
+                padding-inline: 10px;
+                gap: 28px;
+            }
+            main .passarela .card {
+                width: 200px;
+                height: 300px;
+                border-radius: 12px;
+                
+            }
+            main .passarela .card .foto {
+                position: absolute;
+                top: 0;
+                object-fit: cover;
+                height: auto;
+            }
+}
+
+@media (max-width: 520px) 
+{
+        /* *
+        {
+            
+             border: 1px solid #fff; 
+        } */
+
+        header #e1 {
+            width: 70px;
+            height: auto;
+        }
+        header #e3 {
+            width: 150px;
+        }
+        header #e3 input {
+
+            height: 30px;
+            border-radius: 20px;
+            background: transparent;
+            
+        }
+        header #e3 i {
+            
+            font-size: 15px;
+            
+        }
+        header #e3 input::placeholder
+        {
+            font-size: .8em;
+        }
+        main .landing {
+            flex-direction: column;
+            gap: 100px;
+        }
+
+        main .landing .esquerda {
+            width: 100%;
+        }
+        main .landing .esquerda {
+            padding-left: 0px;
+        }
+
+        main .landing .direita .imgz {
+            position: relative;
+        }
+
+
+}
+
+@media (max-width: 500px) 
+{
+        *
+        {    
+            /* border: 1px solid #fff; */
+        }
+
+        header #e3 {
+            width: 50px;
+            display: none;
+            
+        }
+
+        header #e2 ul.nulla
+        {
+            position: relative;
+            padding: 12px 8px;
+            align-items: center;
+
+        }
+
+        header #e2 ul li a {
+            text-decoration: none;
+            color: var(--branco);
+            font-size: 1em;
+            
+        }
+
+        main .landing .direita .imgz {
+            position: static;
+            width: 100%;
+        }
+
+        main .landing {
+            
+            margin: 40px 10px;
+            gap: 50px;
+            
+        }
+
+        main .landing h1 {
+            font-size: 2em;
+            
+        }
+        main .passarela {
+            padding-block: 50px;
+            
+        }
+
+        main .passarela .card {
+            width: 100px;
+            height: 200px;
+            border-radius: 12px;
+        }
+
+        main .passarela .card .desc p {
+            font-size: .6em;
+            font-weight: 500;
+        }
+
+        main .passarela .card .desc span
+        {
+            display: none;
+        }
+        main .passarela .card .desc {
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+            height: 30px;
+            
+        }
+
+        main .passarela .card .foto {
+            height: 100%;
+        }
+
+        .top.pc i {
+            font-size: .7em;
+        }
+
+        .top.pc {
+            width: 40px;
+            height: 40px;
+            padding: 6px;
+            gap: 0px;
+            border-radius: 24px;
+        }
+
+        .top i {
+            font-size: 1.3em;
+        }
+
+        .top {
+            position: fixed;
+            bottom: 20px;
+            right: 26px;
+            width: 30px;
+            height: 30px;
+            
+        }
+
+        .top.pc.mec input
+        {
+            
+            border: none;
+            width: 180px;
+        }
+      
+
+}
