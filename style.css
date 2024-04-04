@@ -156,12 +156,16 @@ header #e1 img {
     height: 100%;
     object-fit: contain;
 }
-
+header #e2 ul
+{
+    display: flex;
+    flex-direction: row;
+}
 header #e2 ul.nulla
 {
     display: flex;
     gap: 32px;
-    z-index: 100;
+    z-index: 10;
 }
 
 header #e2 ul li
@@ -564,7 +568,7 @@ main .passarela .card .desc p
                 display: flex;
             }
         
-            header #e2 ul {
+            header #e2 ul.nulla {
                 width: 250px;
                 background: var(--back);
                 position: absolute;
@@ -676,6 +680,9 @@ main .passarela .card .desc p
 
         main .landing .direita .imgz {
             position: relative;
+        }
+        main .passarela .card .desc {
+            background: rgba(0, 0, 0, 0.432);
         }
 
 

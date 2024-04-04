@@ -173,7 +173,7 @@ function search(pesq)
     {
         let no = e.querySelector(".nm").innerText.toLowerCase()
 
-        if(no.includes(pesq.target.value))
+        if(no.includes(pesq.target.value.toLowerCase()))
         {
             container.innerHTML += 
             `<div class="card">
@@ -207,7 +207,7 @@ document.querySelector(".sandwich").addEventListener("click",()=>{
     document.querySelector(".sandwich").classList.toggle("nulla")
 })
 
-setInterval(hilight,300000)
+setInterval(hilight,10000)
 
 
 
