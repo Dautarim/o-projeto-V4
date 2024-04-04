@@ -25,9 +25,12 @@ let caixaParavd = document.querySelector(".cont_video")
 let caixaParaft = document.querySelector(".cont_foto")
 let linkPornhub = document.querySelectorAll(".dir a")[0]
 let linkOnlyfans = document.querySelectorAll(".dir a")[1]
-let linkTwiter = document.querySelectorAll(".dir a")[2];
+let linkTwiter = document.querySelectorAll(".dir a")[2]
+let wind = document.querySelector(".layer_foto")
+let windimg = document.querySelector("#imgsel")
+let divlist = null;
 
-// console.log(imagemPrincipal);
+// console.log(wind);
 
 (async ()=> {
     await fetch('starlist.json').then(res => res.json()).then((e) => 
@@ -71,8 +74,34 @@ let linkTwiter = document.querySelectorAll(".dir a")[2];
             `
        })
 
-    //    if(e[endereco].)
-        // console.log(e[endereco])
+       divlist = document.querySelectorAll(".bldd")
+
+       divlist.forEach((e) => {
+        e.addEventListener('click', () => {
+            let link = e.children[0].getAttribute("src")
+            wind.classList.toggle("ative")
+            windimg.setAttribute("src", link) 
+           
+        })
+        });
+
     }
 )})()
 
+
+
+
+
+wind.addEventListener('click', ()=> wind.classList.toggle("ative"))
+
+
+/*MENÇÃO HONROZA*/
+/*https://pt.pornhub.com/view_video.php?viewkey=ph5f84a65ba1d43*/
+
+//as que faltam
+/* 
+ -JAYDEN JAMES
+ -AIDRIANA CHENIK
+ -naomi banks
+ 
+*/

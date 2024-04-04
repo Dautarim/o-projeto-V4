@@ -795,6 +795,9 @@ main .passarela .card .desc p
             border: none;
             width: 180px;
         }
+        header {
+          
+            padding: 10px;}
       
 
 }
