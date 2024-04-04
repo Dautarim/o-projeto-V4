@@ -89,9 +89,6 @@ let divlist = null;
 )})()
 
 
-
-
-
 wind.addEventListener('click', ()=> wind.classList.toggle("ative"))
 
 
@@ -103,5 +100,12 @@ wind.addEventListener('click', ()=> wind.classList.toggle("ative"))
  -JAYDEN JAMES
  -AIDRIANA CHENIK
  -naomi banks
- 
+ -cheroquee d'ass
+ -masrati xxx
+ -ms london
+ -phoenix marie
+ -Jayla Page
+ -Layla London
+ -savannah watson
+
 */
