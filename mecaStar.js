@@ -95,17 +95,3 @@ wind.addEventListener('click', ()=> wind.classList.toggle("ative"))
 /*MENÇÃO HONROZA*/
 /*https://pt.pornhub.com/view_video.php?viewkey=ph5f84a65ba1d43*/
 
-//as que faltam
-/* 
- -JAYDEN JAMES
- -AIDRIANA CHENIK
- -naomi banks
- -cheroquee d'ass
- -masrati xxx
- -ms london
- -phoenix marie
- -Jayla Page
- -Layla London
- -savannah watson
-
-*/

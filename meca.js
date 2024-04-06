@@ -98,7 +98,7 @@ async function pega() {
                         ${e.nome.toUpperCase()}
                     </p>
                     <span>
-                        35 Anos
+                        ${e.status.toUpperCase()}
                     </span>
                 </div>
             </a> 
@@ -186,7 +186,7 @@ function search(pesq)
                             ${e.querySelector(".nm").innerText.toUpperCase()}
                         </p>
                         <span>
-                            35 Anos
+                            ATIVA
                         </span>
                     </div>
                 </a> 
