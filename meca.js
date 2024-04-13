@@ -79,7 +79,7 @@ window.addEventListener("scroll",pegaposicao(searcbt))
 
 async function pega() {
     const list = await fetch('./starlist.json').then(res => res.json());
-    //console.log(list);  pra ver se pegou
+    // console.log(list);
     return list;
 } 
 
@@ -87,6 +87,7 @@ async function pega() {
     const res = await pega();
     await res.map((e, index)=>
     {
+        // console.log(e.nome +" = "+e.status +"--"+ index)
         container.innerHTML += 
         `<div class="card">
             <a href="star.html?id=${index}" class="lik">
@@ -98,16 +99,16 @@ async function pega() {
                         ${e.nome.toUpperCase()}
                     </p>
                     <span>
-                        ${e.status.toUpperCase()}
+                        ATIVA
                     </span>
                 </div>
             </a> 
         </div>  `
     })
-    
+    // ${e.status.toUpperCase()}  pra depois
 
     elements = container.querySelectorAll(".card")
-    // console.log(elements[4])
+    // console.log(e)
     
 })();
 
@@ -165,7 +166,6 @@ function search(pesq)
 {
     clearTimeout(tempo)
 
-     
 
     tempo = setTimeout(()=> { 
         container.innerHTML = ""
@@ -186,7 +186,7 @@ function search(pesq)
                             ${e.querySelector(".nm").innerText.toUpperCase()}
                         </p>
                         <span>
-                            ATIVA
+                            ${e.querySelector(".desc span").innerText.toUpperCase()}
                         </span>
                     </div>
                 </a> 

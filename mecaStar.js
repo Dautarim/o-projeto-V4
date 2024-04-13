@@ -15,10 +15,11 @@ function alterna()
 document.querySelector(".nav").addEventListener("click", alterna)
 
 //===variavei =======================
+
 let imagemPrincipal = document.querySelector(".img_box img")
 let nomeGrande = document.querySelector(".nome h2")
 let niver = document.querySelector("#niv span")
-let nasci = document.querySelector("#nasc span") //adicionarei apos a atualização do banco de dados
+let naci = document.querySelector("#nasc span") //adicionarei apos a atualização do banco de dados
 let stat = document.querySelector("#sts span")
 let biografia = document.querySelector(".biog p")
 let caixaParavd = document.querySelector(".cont_video")
@@ -39,6 +40,8 @@ let divlist = null;
        nomeGrande.innerHTML = e[endereco].nome.toUpperCase()
        niver.innerHTML = e[endereco].dataDeNascimento.toUpperCase()
        biografia.innerHTML = e[endereco].sobre
+       naci.innerHTML = e[endereco].nacionalidade
+       stat.innerHTML = e[endereco].status
 
        linkPornhub.setAttribute("href",`${e[endereco].linkSite}`)
        if(e[endereco].rs.onlyfans != "")
@@ -95,3 +98,11 @@ wind.addEventListener('click', ()=> wind.classList.toggle("ative"))
 /*MENÇÃO HONROZA*/
 /*https://pt.pornhub.com/view_video.php?viewkey=ph5f84a65ba1d43*/
 
+/* as que faltam
+
+-misty stone
+-scarlit scandal
+-kira noir
+-Daya Knight
+-sophia leone
+*/
