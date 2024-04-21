@@ -94,6 +94,17 @@ let divlist = null;
 
 wind.addEventListener('click', ()=> wind.classList.toggle("ative"))
 
+//AUTOMAZIN
+
+//PORNPICS
+// const imgs = document.querySelectorAll(".rel-link .ll-loaded")
+// for(var idx = 0; idx < 20; idx++){console.log(imgs[idx].src)}
+
+//PORNHUB
+//const linkVideo = document.querySelectorAll(".phimage a")
+// for(var idx = 0; idx < 8; idx++){console.log(linkVideo[idx].href)}
+
+
 
 /*MENÇÃO HONROZA*/
 /*https://pt.pornhub.com/view_video.php?viewkey=ph5f84a65ba1d43*/
@@ -102,7 +113,10 @@ wind.addEventListener('click', ()=> wind.classList.toggle("ative"))
 
 -misty stone
 -scarlit scandal
--kira noir
 -Daya Knight
 -sophia leone
+-Gabie Carter
+-pinky
+-jada fire
+-Avery Jane
 */
