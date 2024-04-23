@@ -151,9 +151,15 @@ header #e1 {
     width: 100px;
     height: 100px;
 }
-header #e1 img {
+
+header #e1 a {
+    display: flex;
     width: 100%;
     height: 100%;
+}
+header #e1 a img {
+    width: 100px;
+    height: 100px;
     object-fit: contain;
 }
 header #e2 ul
@@ -637,11 +643,7 @@ main .passarela .card .desc p
 
 @media (max-width: 520px) 
 {
-        /* *
-        {
-            
-             border: 1px solid #fff; 
-        } */
+        /* *{border: 1px solid #fff; } */
 
         header #e1 {
             width: 70px;

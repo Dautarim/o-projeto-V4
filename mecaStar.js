@@ -77,10 +77,29 @@ let divlist = null;
             `
        })
 
-       divlist = document.querySelectorAll(".bldd")
+    divlist = document.querySelectorAll(".bldd")
 
-       divlist.forEach((e) => {
-        e.addEventListener('click', () => {
+    let nextStar = document.querySelector(".navStar.next a")
+    let preuvStar = document.querySelector(".navStar.preuv a")
+    
+    if(endereco == 0)
+    {
+        nextStar.setAttribute("href",`star.html?id=${Number(endereco) + 1}`)
+        preuvStar.setAttribute("href",`star.html?id=${Number(e.length) - 1}`)
+    }
+    else if(endereco == e.length)
+    {
+        nextStar.setAttribute("href",`star.html?id=${0}`)
+        preuvStar.setAttribute("href",`star.html?id=${Number(endereco) - 1}`)
+    }
+    else
+    {
+        nextStar.setAttribute("href",`star.html?id=${Number(endereco) + 1}`)
+        preuvStar.setAttribute("href",`star.html?id=${Number(endereco) - 1}`)
+    }
+
+    divlist.forEach((e) => {
+    e.addEventListener('click', () => {
             let link = e.children[0].getAttribute("src")
             wind.classList.toggle("ative")
             windimg.setAttribute("src", link) 
@@ -92,31 +111,42 @@ let divlist = null;
 )})()
 
 
+
+
+
+
+
 wind.addEventListener('click', ()=> wind.classList.toggle("ative"))
 
 //AUTOMAZIN
 
 //PORNPICS
+
 // const imgs = document.querySelectorAll(".rel-link .ll-loaded")
-// for(var idx = 0; idx < 20; idx++){console.log(imgs[idx].src)}
+// let formatado = ""
+// for(var idx = 0; idx < 30; idx++){
+//     formatado += `"${imgs[idx].src}",\n`
+// }
+// console.log(formatado)
 
 //PORNHUB
-//const linkVideo = document.querySelectorAll(".phimage a")
-// for(var idx = 0; idx < 8; idx++){console.log(linkVideo[idx].href)}
+// const linkVideo = document.querySelectorAll(".phimage a")
+// let formatado = ""
+// for(var idx = 0; idx < 8; idx++)
+//     {
+//         formatado += `"https://www.pornhub.com/ ${linkVideo[idx].href}",\n`
+//     }
+//     console.log(formatado)
 
-
+//brazzers
+//  var testo = document.querySelector("p.sc-1efjxte-1 font font").innerHTML 
+//   var dat = document.querySelector("span.sc-szs79h-6 font font").innerHTML
+//   var nac = document.querySelectorAll("span.sc-szs79h-6 font font")[1].innerHTML 
+//       console.log(`
+//             "dataDeNascimento": "${dat}",
+//             "nacionalidade": "${nac}",
+//             "sobre": "${testo}",
+//             `) 
 
 /*MENÇÃO HONROZA*/
 /*https://pt.pornhub.com/view_video.php?viewkey=ph5f84a65ba1d43*/
-
-/* as que faltam
-
--misty stone
--scarlit scandal
--Daya Knight
--sophia leone
--Gabie Carter
--pinky
--jada fire
--Avery Jane
-*/
