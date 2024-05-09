@@ -148,5 +148,3 @@ wind.addEventListener('click', ()=> wind.classList.toggle("ative"))
 //             "sobre": "${testo}",
 //             `) 
 
-/*MENÇÃO HONROZA*/
-/*https://pt.pornhub.com/view_video.php?viewkey=ph5f84a65ba1d43*/
