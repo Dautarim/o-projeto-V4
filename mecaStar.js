@@ -148,3 +148,28 @@ wind.addEventListener('click', ()=> wind.classList.toggle("ative"))
 //             "sobre": "${testo}",
 //             `) 
 
+/*
+Holly Hendrix
+Brittney White
+Sharon lee
+Lily lou
+Crystal Chase
+
+Angelina castro
+Kailani kai
+Sheridan love
+Emma but
+Ryan keely
+
+Sybil stallon
+Melanie monroe
+Anastacia lux
+Lily starfire
+Luna corazon
+
+Nina rotti
+Virgo peridot
+Taylee wood
+Diamond kitty
+ortega twins
+*/
