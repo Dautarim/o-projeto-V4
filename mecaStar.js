@@ -149,27 +149,18 @@ wind.addEventListener('click', ()=> wind.classList.toggle("ative"))
 //             `) 
 
 /*
-Holly Hendrix
-Brittney White
-Sharon lee
-Lily lou
-Crystal Chase
 
-Angelina castro
-Kailani kai
-Sheridan love
-Emma but
-Ryan keely
-
-Sybil stallon
-Melanie monroe
-Anastacia lux
+shai fox
 Lily starfire
 Luna corazon
-
-Nina rotti
-Virgo peridot
-Taylee wood
-Diamond kitty
-ortega twins
+Elsie yalater
 */
+
+
+
+// let fotolist = document.querySelectorAll("#container .mbphoto2 a img")
+// let formatado = ""
+// for(var idx = 12; idx < 42; idx++){
+//     formatado += `"${fotolist[idx].src}",\n`
+// }
+// console.log(formatado)
