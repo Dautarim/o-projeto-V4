@@ -149,11 +149,8 @@ wind.addEventListener('click', ()=> wind.classList.toggle("ative"))
 //             `) 
 
 /*
-
-shai fox
-Lily starfire
-Luna corazon
-Elsie yalater
+EVA ELFIE
+Demi Sutra
 */
 
 
