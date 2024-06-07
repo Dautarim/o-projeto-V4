@@ -149,8 +149,52 @@ wind.addEventListener('click', ()=> wind.classList.toggle("ative"))
 //             `) 
 
 /*
-EVA ELFIE
-Demi Sutra
+
+
+
+Holly Halston
+
+Amber Alena
+August Skye
+Isis Love
+Rachel Roxxx
+CJ Miles
+Azul Hermosa
+Anne Amari
+Monique Alexander
+Alena Croft
+Kissa Sins
+Teanna Trump
+Hailey Rose
+Monica Santhiago
+Katrina Jade
+Jennifer Mendez
+Aidra Fox
+Amy Anderssen
+Hitomi Tanaka
+Noemie Bilas
+Alexis Breeze
+Brandi Bae
+Alexis Andrews
+Skin Diamond
+Mz dani
+Missy Martinez
+Alycia Starr
+Kim Velez
+Jaye Summers
+Desiree Dulce
+Kate Dee
+Kianna Dior
+Karlee Grey
+Keisha Grey
+Aletta Ocean
+Abigaiil Morris
+Annabel Redd
+Mona Azar
+Kagney Linn Karter
+Asa Akira
+Veronica Rodriguez
+
 */
 
 

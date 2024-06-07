@@ -177,7 +177,7 @@ function search(pesq)
         {
             container.innerHTML += 
             `<div class="card">
-                <a href="${e.querySelector(".lik").getAttribute('href')}" target="_blank">
+                <a href="${e.querySelector(".lik").getAttribute('href')}">
                     <div class="foto">
                         <img src="${e.querySelector(".foto img").getAttribute('src')}" alt="">
                     </div>
@@ -207,7 +207,7 @@ document.querySelector(".sandwich").addEventListener("click",()=>{
     document.querySelector(".sandwich").classList.toggle("nulla")
 })
 
-setInterval(hilight,30000)
+setInterval(hilight,7000)
 
 
 
