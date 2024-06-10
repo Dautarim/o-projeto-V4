@@ -167,7 +167,7 @@ Kissa Sins
 Teanna Trump
 Hailey Rose
 Monica Santhiago
-Katrina Jade
+
 Jennifer Mendez
 Aidra Fox
 Amy Anderssen
