@@ -157,20 +157,20 @@ Holly Halston
 Amber Alena
 August Skye
 Isis Love
-Rachel Roxxx
+
 CJ Miles
 Azul Hermosa
 Anne Amari
-Monique Alexander
+
 Alena Croft
 Kissa Sins
 Teanna Trump
 Hailey Rose
 Monica Santhiago
 
-Jennifer Mendez
+
 Aidra Fox
-Amy Anderssen
+
 Hitomi Tanaka
 Noemie Bilas
 Alexis Breeze
