@@ -108,8 +108,7 @@ async function pega() {
     // ${e.status.toUpperCase()}  pra depois
 
     elements = container.querySelectorAll(".card")
-    // console.log(e)
-    
+    // console.log(e)  
 })();
 
 
@@ -145,7 +144,7 @@ async function hilight()
 
                 <div class="acoes">
                     <a href="star.html?id=${indiceList[alea]}"> Mais </a>
-                    <a href="${listHilight[alea].linkSite}"> Assistir </a>
+                    <a href="${listHilight[alea].linkSite}" target="_blank"> Assistir </a>
                 </div>
 
             </div>
@@ -207,7 +206,7 @@ document.querySelector(".sandwich").addEventListener("click",()=>{
     document.querySelector(".sandwich").classList.toggle("nulla")
 })
 
-setInterval(hilight,7000)
+setInterval(hilight,70000)
 
 
 
