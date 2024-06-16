@@ -206,7 +206,7 @@ document.querySelector(".sandwich").addEventListener("click",()=>{
     document.querySelector(".sandwich").classList.toggle("nulla")
 })
 
-setInterval(hilight,70000)
+setInterval(hilight,10000)
 
 
 
