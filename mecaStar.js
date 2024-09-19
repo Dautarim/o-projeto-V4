@@ -139,9 +139,9 @@ wind.addEventListener('click', ()=> wind.classList.toggle("ative"))
 //     console.log(formatado)
 
 //brazzers
-//  var testo = document.querySelector("p.sc-1efjxte-1 font font").innerHTML 
-//   var dat = document.querySelector("span.sc-szs79h-6 font font").innerHTML
-//   var nac = document.querySelectorAll("span.sc-szs79h-6 font font")[1].innerHTML 
+// var testo = document.querySelector(".sc-1xsm8kz-2 font font").innerHTML 
+//   var dat = document.querySelectorAll(".sc-1ubqwfe-3 li .value font font")[0].innerHTML
+//   var nac = document.querySelectorAll(".sc-1ubqwfe-3 li .value font font")[1].innerHTML
 //       console.log(`
 //             "dataDeNascimento": "${dat}",
 //             "nacionalidade": "${nac}",
@@ -150,45 +150,32 @@ wind.addEventListener('click', ()=> wind.classList.toggle("ative"))
 
 /*
 
-
-
-Holly Halston
-
 Amber Alena
 August Skye
 Isis Love
-
-CJ Miles
-Azul Hermosa
 Anne Amari
-
 Alena Croft
 Kissa Sins
 Teanna Trump
 Hailey Rose
 Monica Santhiago
-
-
 Aidra Fox
-Andi Anderson
 Hitomi Tanaka
 Noemie Bilas
 Alexis Breeze
 Brandi Bae
 Alexis Andrews
 Skin Diamond
-Mz dani
 
 Alycia Starr
 Kim Velez
 Jaye Summers
 Desiree Dulce
 Kate Dee
-Kianna Dior
+
 Karlee Grey
 Keisha Grey
 Aletta Ocean
-Abigaiil Morris
 Annabel Redd
 Mona Azar
 Kagney Linn Karter
