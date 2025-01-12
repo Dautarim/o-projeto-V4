@@ -151,7 +151,7 @@ wind.addEventListener('click', ()=> wind.classList.toggle("ative"))
 /*
 
 Amber Alena
-August Skye
+
 Isis Love
 Anne Amari
 Alena Croft
@@ -165,9 +165,8 @@ Noemie Bilas
 Alexis Breeze
 Brandi Bae
 Alexis Andrews
-Skin Diamond
 
-Alycia Starr
+
 Kim Velez
 Jaye Summers
 Desiree Dulce
@@ -180,7 +179,7 @@ Annabel Redd
 Mona Azar
 Kagney Linn Karter
 Asa Akira
-Veronica Rodriguez
+
 
 */
 
