@@ -129,7 +129,7 @@ wind.addEventListener('click', ()=> wind.classList.toggle("ative"))
 // }
 // console.log(formatado)
 
-//PORNHUB
+// PORNHUB
 // const linkVideo = document.querySelectorAll(".phimage a")
 // let formatado = ""
 // for(var idx = 0; idx < 8; idx++)
