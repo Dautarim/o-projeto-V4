@@ -148,40 +148,7 @@ wind.addEventListener('click', ()=> wind.classList.toggle("ative"))
 //             "sobre": "${testo}",
 //             `) 
 
-/*
 
-Amber Alena
-
-Isis Love
-Anne Amari
-Alena Croft
-Kissa Sins
-Teanna Trump
-Hailey Rose
-Monica Santhiago
-Aidra Fox
-Hitomi Tanaka
-Noemie Bilas
-Alexis Breeze
-Brandi Bae
-Alexis Andrews
-
-
-Kim Velez
-Jaye Summers
-Desiree Dulce
-Kate Dee
-
-Karlee Grey
-Keisha Grey
-Aletta Ocean
-Annabel Redd
-Mona Azar
-Kagney Linn Karter
-Asa Akira
-Ava Devine
-
-*/
 
 
 
