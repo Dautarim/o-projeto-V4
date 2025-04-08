@@ -498,13 +498,20 @@ main .passarela .card .desc p
 {
     font-size: 1.3em;
     font-weight: 600;
+    color: #fff;
     
 }
 
-main .passarela .card .desc p
+ 
+main .passarela .card .desc #assistir
 {
-    font-weight: 500;
-
+    color: var(--branco);
+    background: var(--princip);
+    padding: 4px 12px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: .8em;
 }
 
 /*=======Responsividade=========*/

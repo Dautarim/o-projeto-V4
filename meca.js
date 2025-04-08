@@ -99,7 +99,7 @@ async function pega() {
                         ${e.nome.toUpperCase()}
                     </p>
                     <span>
-                        ATIVA
+                        <a href="${e.linkSite}" target="_blank" id="assistir">ASSISTIR</a>
                     </span>
                 </div>
             </a> 

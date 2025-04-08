@@ -120,7 +120,7 @@ wind.addEventListener('click', ()=> wind.classList.toggle("ative"))
 
 //AUTOMAZIN
 
-//PORNPICS
+// PORNPICS
 
 // const imgs = document.querySelectorAll(".rel-link .ll-loaded")
 // let formatado = ""
