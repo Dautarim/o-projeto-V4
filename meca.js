@@ -87,6 +87,7 @@ async function pega() {
     const res = await pega();
     await res.map((e, index)=>
     {
+        
         // console.log(e.nome +" = "+e.status +"--"+ index)
         container.innerHTML += 
         `<div class="card">
