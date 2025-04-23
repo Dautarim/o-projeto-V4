@@ -111,12 +111,9 @@ let divlist = null;
 )})()
 
 
-
-
-
-
-
 wind.addEventListener('click', ()=> wind.classList.toggle("ative"))
+
+
 
 //AUTOMAZIN
 
@@ -138,7 +135,7 @@ wind.addEventListener('click', ()=> wind.classList.toggle("ative"))
 //     }
 //     console.log(formatado)
 
-//brazzers
+// brazzers
 // var testo = document.querySelector(".sc-1xsm8kz-2 font font").innerHTML 
 //   var dat = document.querySelectorAll(".sc-1ubqwfe-3 li .value font font")[0].innerHTML
 //   var nac = document.querySelectorAll(".sc-1ubqwfe-3 li .value font font")[1].innerHTML
