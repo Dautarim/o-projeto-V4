@@ -155,3 +155,6 @@ wind.addEventListener('click', ()=> wind.classList.toggle("ative"))
 //     formatado += `"${fotolist[idx].src}",\n`
 // }
 // console.log(formatado)
+
+
+// Shione Cooper
