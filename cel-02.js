@@ -1,7 +1,7 @@
 
 
 import puppeteer from 'puppeteer'
-const actres = "lisa ann";
+const actres = "gem jewels";
 (async ()=>{
     const chorme = await puppeteer.launch({headless: false})
     const page = await chorme.newPage()
@@ -16,11 +16,11 @@ const actres = "lisa ann";
         const countri = await page.evaluate(() => document.querySelectorAll('.item .value')[2].innerText)
         const about = await page.evaluate(() => document.querySelectorAll('.item .value')[12].innerText)
         const names = actres.split(" ")
-        const linkImg = await page.evaluate(()=> document.querySelectorAll('.wookmark-initialised .thumbwook a')[1].href)
+        const linkImg = await page.evaluate(()=> document.querySelectorAll('.wookmark-initialised .thumbwook a img')[0].src)
         let fotos = await page.evaluate(() => {
             let formatado = ""
             for(var i = 0; i < 10; i++){
-                formatado += `"${document.querySelectorAll('.wookmark-initialised .thumbwook a')[i].href}",\n`}
+                formatado += `"${document.querySelectorAll('.wookmark-initialised .thumbwook a img')[i].src}",\n`}
             return formatado; })
 
     console.log(`{
