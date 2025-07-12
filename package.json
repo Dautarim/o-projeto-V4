@@ -1,0 +1,24 @@
+{
+  "name": "o-projeto-v4",
+  "version": "1.0.0",
+  "description": "Versão 4 do projeto v-stars, agora um pouco mais avançado",
+  "main": "cel-02.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dautarim/o-projeto-V4.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dautarim/o-projeto-V4/issues"
+  },
+  "homepage": "https://github.com/Dautarim/o-projeto-V4#readme",
+  "dependencies": {
+    "puppeteer": "^24.12.1"
+  }
+}
