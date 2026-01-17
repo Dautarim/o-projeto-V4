@@ -432,8 +432,9 @@ main .passarela
 
 main .passarela a
 {
-    color: var(--back);
+    color: var(--back2);
     text-decoration: none;
+    border-radius: 12px;
 }
 
 main .passarela .card
@@ -498,7 +499,7 @@ main .passarela .card .desc p
 {
     font-size: 1.3em;
     font-weight: 600;
-    color: #fff;
+    color: var(--back2);
     
 }
 
